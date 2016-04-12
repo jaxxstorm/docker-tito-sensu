@@ -4,7 +4,7 @@ MAINTAINER Lee Briggs <lee@leebriggs.co.uk>
 
 # Install deps
 RUN yum update -y
-RUN yum install -y ruby-devel gcc gcc-c++ wget curl libxml2 libxml2-devel libxslt-devel libxslt libyaml-devel libicu-devel openssl-devel expect git bzip2 make readline-devel rpm-devel
+RUN yum install -y ruby-devel gcc gcc-c++ wget curl libxml2 libxml2-devel libxslt-devel libxslt libyaml-devel libicu-devel openssl-devel expect git bzip2 make readline-devel rpm-devel rpm-sign
 
 # Install sensu
 RUN yum install -y http://repositories.sensuapp.org/yum/7/x86_64/sensu-0.21.0-2.x86_64.rpm
